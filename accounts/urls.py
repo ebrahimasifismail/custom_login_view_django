@@ -22,6 +22,9 @@ app_name = 'accounts'
 
 urlpatterns = [
     path("home/", views.home, name="home"),
-    path("login/", views.CustomLoginView.as_view(), name="login")
+    path("login/", views.CustomLoginView.as_view(), name="login"),
+    path("doctor/", views.doctor_view, name="doctor"),
+    path("nurse/", views.nurse_view, name="nurse"),
+    path("login-failure/", views.login_failure_view, name="failure"),
 
 ]
